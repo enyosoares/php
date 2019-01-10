@@ -1,0 +1,228 @@
+Microsoft Windows [versão 10.0.17134.472]
+(c) 2018 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\enyos>cd C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git add olamundo.php
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git add --all
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git commit -m iniciar
+[master (root-commit) a36c7d4] iniciar
+ 1 file changed, 3 insertions(+)
+ create mode 100644 olamundo.php
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git remote add origin https://github.com/enyosoares/php.gi
+t
+fatal: remote origin already exists.
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git gonfig --global user.name "Enyo Soares"
+git: 'gonfig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config --global user.name "Enyo Soares"
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config --global user.mail "enyosoares@id.uff.br"
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': enyosoares@id.uff.br
+Password for 'https://enyosoares@id.uff.br@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/enyosoares/php.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   olamundo.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git branch
+* master
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   olamundo.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git add olamundo.php
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   olamundo.php
+
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git commit
+[master 4415c94] Teste GitHub
+ 1 file changed, 1 insertion(+)
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git log
+commit 4415c943c5605cb6249ab90f18988bb6ebfdc667 (HEAD -> master)
+Author: Enyo Soares <enyosoares@id.uff.br>
+Date:   Thu Jan 10 10:58:26 2019 -0200
+
+    Teste GitHub
+
+    Aprendendo GitHub
+
+commit a36c7d464906fc8b0a1195a7114e70e728781ecd (origin/master)
+Author: Enyo Soares <enyosoares@id.uff.br>
+Date:   Thu Jan 10 09:50:38 2019 -0200
+
+    iniciar
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config global --core.editor
+error: key does not contain a section: global
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config --global core.editor
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config --global core.editor notepad.exe
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config --global core.editor
+notepad.exe
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config --global core.editor notepad++.exe
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config --global core.editor notepad++
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git config --global core.editor notepad
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git dif
+git: 'dif' is not a git command. See 'git --help'.
+
+The most similar commands are
+        diff
+        config
+        difftool
+        init
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git diff
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>prompt
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>cp --help
+'cp' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>dir --help
+ O volume na unidade C é Windows
+ O Número de Série do Volume é 22B5-4CD9
+
+ Pasta de C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php
+
+Arquivo não encontrado
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git log
+commit 4415c943c5605cb6249ab90f18988bb6ebfdc667 (HEAD -> master)
+Author: Enyo Soares <enyosoares@id.uff.br>
+Date:   Thu Jan 10 10:58:26 2019 -0200
+
+    Teste GitHub
+
+    Aprendendo GitHub
+
+commit a36c7d464906fc8b0a1195a7114e70e728781ecd (origin/master)
+Author: Enyo Soares <enyosoares@id.uff.br>
+Date:   Thu Jan 10 09:50:38 2019 -0200
+
+    iniciar
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git branch
+* master
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git tree
+git: 'tree' is not a git command. See 'git --help'.
+
+The most similar command is
+        mktree
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>git checkout master
+Already on 'master'
+M       olamundo.php
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+C:\Users\enyos\Google Drive\FACULDADE\2019-1\PAW\Projetos\php>
